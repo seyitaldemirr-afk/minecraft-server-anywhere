@@ -108,6 +108,18 @@ On non-phone targets (laptop, mini PC, Raspberry Pi, desktop) these constraints 
 
 ---
 
+## Roadmap
+
+Planned, if there's enough interest:
+
+- 📹 **Installation videos** — step-by-step walkthroughs.
+- 🖥️ **Environment-specific guides** — dedicated instructions for Raspberry Pi, mini PC, old laptop, and desktop (beyond the adaptable method).
+- 📁 **More real install references** — frozen, evidence-backed worked examples on additional devices (like the current Galaxy S9 case).
+
+These are demand-driven. If you'd use them, **star the repo**, **watch** for updates, or **open an issue** describing your device/environment — that's how I gauge what to build next.
+
+---
+
 ## License
 
 MIT — see [`LICENSE`](LICENSE).

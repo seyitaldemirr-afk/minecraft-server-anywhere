@@ -108,6 +108,18 @@ Telefon dışı hedeflerde (laptop, mini PC, Raspberry Pi, masaüstü) bu kısı
 
 ---
 
+## Yol Haritası
+
+Yeterli ilgi olursa planlananlar:
+
+- 📹 **Kurulum videoları** — adım adım anlatımlar.
+- 🖥️ **Ortama özel rehberler** — Raspberry Pi, mini PC, eski laptop ve masaüstü için ayrı talimatlar (uyarlanabilir yöntemin ötesinde).
+- 📁 **Daha fazla gerçek kurulum referansı** — başka cihazlarda dondurulmuş, kanıta dayalı çözülmüş örnekler (mevcut Galaxy S9 vakası gibi).
+
+Bunlar talebe bağlı. İşine yarayacaksa **repoyu yıldızla**, güncellemeler için **takip et (watch)**, ya da cihazını/ortamını anlatan bir **issue aç** — sırada ne geliştireceğimi böyle ölçüyorum.
+
+---
+
 ## Lisans
 
 MIT — bkz. [`LICENSE`](LICENSE).
