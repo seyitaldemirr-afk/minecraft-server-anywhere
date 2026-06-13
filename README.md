@@ -17,6 +17,21 @@ Run a real Minecraft server — mods, persistent world, always-on, reachable fro
 
 ---
 
+## Is This for You?
+
+**A good fit if you:**
+- Have an idle device you can leave plugged in — an old phone, a mini PC, a Raspberry Pi, or a spare laptop.
+- Want a small server for friends or family (a handful of players).
+- Want real mods and a persistent world, at zero cost, without touching your router.
+- Are comfortable following a technical guide — or handing the repo to an AI agent that follows it for you.
+
+**Probably not for you if you:**
+- Need a large public server for dozens of simultaneous players — an old phone caps at ~3; this is built for small groups, not scale.
+- Want one-click hosting with no technical steps and no setup.
+- Require guaranteed 24/7 enterprise uptime or an SLA — this runs on home hardware and a home internet connection.
+
+---
+
 ## Why This Beats the Alternatives
 
 | | Free hosts (Aternos…) | Paid hosting | Normal self-host | **This project** |

@@ -17,6 +17,21 @@ Gerçek bir Minecraft sunucusu — mod desteğiyle, kalıcı dünyayla, her zama
 
 ---
 
+## Bu Senin İçin mi?
+
+**Şunlardan biriysen uygun:**
+- Prize takılı bırakabileceğin atıl bir cihazın var — eski bir telefon, mini PC, Raspberry Pi ya da yedek bir laptop.
+- Arkadaşların veya ailen için küçük bir sunucu istiyorsun (birkaç oyuncu).
+- Gerçek mod desteği ve kalıcı bir dünya istiyorsun; sıfır maliyetle, modemi kurcalamadan.
+- Teknik bir rehberi takip etmekten rahatsız değilsin — ya da repoyu senin yerine onu izleyen bir yapay zeka ajanına veriyorsun.
+
+**Muhtemelen senin için değil, eğer:**
+- Aynı anda onlarca oyuncu için büyük, herkese açık bir sunucu gerekiyorsa — eski telefon ~3 oyuncuda tıkanır; bu, ölçek için değil küçük gruplar için tasarlandı.
+- Hiçbir teknik adım ve kurulum olmadan tek tıkla hosting istiyorsan.
+- Garantili 7/24 kurumsal kesintisizlik veya SLA gerekiyorsa — bu, ev donanımı ve ev internet bağlantısıyla çalışır.
+
+---
+
 ## Neden Alternatiflerden Daha İyi
 
 | | Ücretsiz hostlar (Aternos…) | Ücretli hosting | Normal öz-barındırma | **Bu proje** |
