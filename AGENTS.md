@@ -5,6 +5,38 @@ CLAUDE.md points here. Read this file first, in full, before touching anything e
 
 ---
 
+## 0. How to Execute (before doing anything)
+
+You are about to install on a real device. Work from the repo's **actual files**, not from
+web-page summaries — summaries drop the exact commands and will make you improvise and hit
+walls this repo already solves.
+
+1. **Get the repo verbatim.** `git clone` this repository (or fetch raw files from
+   `raw.githubusercontent.com/.../main/<path>`) and read the real file contents — especially
+   `reference-s9/scripts/kur.sh`, `run.sh`, and `reference-s9/scripts/boot/start-mc`. Do NOT
+   rely on summarized fetches of GitHub pages.
+2. **Prefer the tested script over improvising.** `reference-s9/scripts/kur.sh` already does,
+   in order: add `tur-repo` + install `playit`, install Java 21 / tmux / jq / curl, download
+   the Fabric launcher, copy `config/server.properties.ornek`, fetch the 6 performance mods
+   from Modrinth, and install `run.sh` + the Termux:Boot script. **Adapt and run this script;
+   do not rewrite it from memory.** On a non-phone target, translate its steps per `method/06`.
+3. **Tunnel = interactive claim, not a headless API.** playit needs a claim link the **user
+   approves in a browser**, then a Java tunnel pointing to `127.0.0.1:25565`. Use the TUR
+   `playit-cli` claim flow (`method/03-tunel-yontemleri.md` + `reference-s9/adimlar.md`). Do
+   **not** try to reverse-engineer `api.playit.gg`.
+4. **Run Termux-side steps inside Termux** (push the repo to the phone and run `kur.sh` in a
+   real Termux session), not via fragile non-interactive SSH one-shots — `tmux` needs `TMPDIR`
+   set and a real session, which SSH-driven one-shots break.
+5. **Platform gotchas.**
+   - Android phone over USB must be in **File Transfer (MTP)** mode with **USB debugging
+     authorized**; after a factory reset it reverts to "charging only" and `adb devices` shows
+     nothing until the user switches the mode and re-approves the trust prompt on the screen.
+   - Samsung **Play Protect** may stall `adb install` with an on-screen prompt — confirm it, or
+     temporarily `adb shell settings put global verifier_verify_adb_installs 0` (restore after).
+   - On **Windows Git Bash**, set `MSYS_NO_PATHCONV=1` for `/sdcard/...` paths.
+
+---
+
 ## 1. What This Repo Is — Reading Order
 
 **This is not a phone repo.** It is an adaptable, free self-host recipe for running a
