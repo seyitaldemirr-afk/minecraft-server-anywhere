@@ -26,7 +26,7 @@ Gerçek bir Minecraft sunucusu — mod desteğiyle, kalıcı dünyayla, her zama
 - Teknik bir rehberi takip etmekten rahatsız değilsin — ya da repoyu senin yerine onu izleyen bir yapay zeka ajanına veriyorsun.
 
 **Muhtemelen senin için değil, eğer:**
-- Aynı anda onlarca oyuncu için büyük, herkese açık bir sunucu gerekiyorsa — eski telefon ~3 oyuncuda tıkanır; bu, ölçek için değil küçük gruplar için tasarlandı.
+- Aynı anda çok sayıda oyuncu için bir sunucu gerekiyorsa — bu, küçük gruplar (arkadaşlar ve aile) için tasarlanıp test edildi. Yüksek oyuncu sayısını yük testi yapmadık, dolayısıyla o ölçekte bir vaat vermiyoruz.
 - Hiçbir teknik adım ve kurulum olmadan tek tıkla hosting istiyorsan.
 - Garantili 7/24 kurumsal kesintisizlik veya SLA gerekiyorsa — bu, ev donanımı ve ev internet bağlantısıyla çalışır.
 
@@ -132,6 +132,22 @@ Yeterli ilgi olursa planlananlar:
 - 📁 **Daha fazla gerçek kurulum referansı** — başka cihazlarda dondurulmuş, kanıta dayalı çözülmüş örnekler (mevcut Galaxy S9 vakası gibi).
 
 Bunlar talebe bağlı. İşine yarayacaksa **repoyu yıldızla**, güncellemeler için **takip et (watch)**, ya da cihazını/ortamını anlatan bir **issue aç** — sırada ne geliştireceğimi böyle ölçüyorum.
+
+---
+
+## Katkı
+
+Katkılara açığız — ve buradaki katkılar biraz farklı. En değerlisi **tarifin başka bir
+cihazda çalıştığının kanıtı**: gerçek loglar ve kapı sonuçlarıyla yeni bir
+`reference-<cihaz>/` çözülmüş örneği. `method/`'e uyarlamalar, dokümanlar, çeviriler ve
+"şu cihazımda çalışmadı" raporları da çok yardımcı olur.
+
+Başlamak için **[CONTRIBUTING.md](CONTRIBUTING.md)** (İngilizce) — ve lütfen üç ilkeyi koru:
+determinizm reçete değil kanıttır, adımlar uyarlanır ama kapılar uyarlanmaz, ölçümsüz iddia
+yok. Nazik ol — [Davranış Kuralları](CODE_OF_CONDUCT.md).
+
+Kod yazmaya hazır değil misin? Cihazını anlatan bir [issue aç](../../issues/new/choose) — bu,
+sırada ne geliştirileceğini önceliklendirmeye yarar.
 
 ---
 

@@ -1,0 +1,19 @@
+name: "💡 Idea / request"
+description: "Suggest an improvement, request an environment-specific guide, or vote for a roadmap item."
+title: "[idea] <short summary>"
+labels: ["idea"]
+body:
+  - type: markdown
+    attributes:
+      value: "Requests are how the [roadmap](../blob/main/README.md#roadmap) gets prioritized. Telling me your environment helps me gauge demand."
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like to see?
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Your device / environment (optional)
+      placeholder: "e.g. mini PC, old laptop, Raspberry Pi 5"

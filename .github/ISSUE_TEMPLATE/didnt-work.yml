@@ -1,0 +1,39 @@
+name: "🐛 Didn't work on my device"
+description: "You tried the recipe and something failed or a gate didn't pass."
+title: "[didn't work] <short summary>"
+labels: ["bug", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: "Sorry it didn't go smoothly — your report makes the recipe more robust. Please mask any secrets/PII (home IP, tokens, keys) before pasting logs."
+  - type: input
+    id: device
+    attributes:
+      label: Device & OS
+      placeholder: "e.g. Samsung Galaxy A52 · Android 13"
+    validations:
+      required: true
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Where did it fail?
+      options:
+        - "Access / preparation"
+        - "Server install (Fabric + mods)"
+        - "Tunnel (playit / external reach)"
+        - "Autonomy (reboot / crash recovery)"
+        - "A verification gate failed"
+        - "Other / not sure"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected vs. what happened
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs / output (secrets & PII masked)
+      render: shell

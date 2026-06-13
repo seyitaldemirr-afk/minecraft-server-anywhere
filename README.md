@@ -26,7 +26,7 @@ Run a real Minecraft server — mods, persistent world, always-on, reachable fro
 - Are comfortable following a technical guide — or handing the repo to an AI agent that follows it for you.
 
 **Probably not for you if you:**
-- Need a large public server for dozens of simultaneous players — an old phone caps at ~3; this is built for small groups, not scale.
+- Need a server for many simultaneous players — this was designed and tested for small groups (friends and family). We haven't load-tested large player counts, so it makes no promises at that scale.
 - Want one-click hosting with no technical steps and no setup.
 - Require guaranteed 24/7 enterprise uptime or an SLA — this runs on home hardware and a home internet connection.
 
@@ -132,6 +132,22 @@ Planned, if there's enough interest:
 - 📁 **More real install references** — frozen, evidence-backed worked examples on additional devices (like the current Galaxy S9 case).
 
 These are demand-driven. If you'd use them, **star the repo**, **watch** for updates, or **open an issue** describing your device/environment — that's how I gauge what to build next.
+
+---
+
+## Contributing
+
+Contributions are welcome — and they look a little different here. The most valuable one is
+**proof that the recipe works on a new device**: a fresh `reference-<device>/` worked example
+with real logs and gate results. Adaptations to `method/`, docs, translations, and "it didn't
+work on my X" reports all help too.
+
+See **[CONTRIBUTING.md](CONTRIBUTING.md)** to get started, and please keep the three principles:
+determinism is proof not a recipe, steps adapt but gates don't, and no claim without a
+measurement. Be kind — [Code of Conduct](CODE_OF_CONDUCT.md).
+
+Not ready to write code? Open an [issue](../../issues/new/choose) describing your device — it
+helps prioritize what gets built next.
 
 ---
 

@@ -1,0 +1,58 @@
+name: "📁 New install reference"
+description: "You ran the recipe on a different device and want to contribute it as a worked example."
+title: "[reference] <device> — <OS>"
+labels: ["reference", "help wanted"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! A new evidence-backed reference is the most valuable contribution. See
+        [CONTRIBUTING.md](../blob/main/CONTRIBUTING.md) for the structure. Open this issue
+        first so we can coordinate before you write it up.
+  - type: input
+    id: device
+    attributes:
+      label: Device & OS
+      placeholder: "e.g. Raspberry Pi 4 (4GB) · Raspberry Pi OS 64-bit"
+    validations:
+      required: true
+  - type: input
+    id: specs
+    attributes:
+      label: RAM / CPU
+      placeholder: "e.g. 4 GB · Cortex-A72 4-core"
+    validations:
+      required: true
+  - type: input
+    id: access
+    attributes:
+      label: Access method
+      placeholder: "e.g. SSH (headless), or scrcpy/DeX for a phone"
+    validations:
+      required: true
+  - type: dropdown
+    id: gates
+    attributes:
+      label: Which gates did you pass?
+      multiple: true
+      options:
+        - "Health (spark TPS)"
+        - "Autonomy (reboot test)"
+        - "External reach (mcstatus)"
+        - "Mod integrity (hash + clean boot)"
+    validations:
+      required: true
+  - type: checkboxes
+    id: evidence
+    attributes:
+      label: Evidence
+      options:
+        - label: "I can share raw logs and measurements (secrets/PII masked)."
+          required: true
+        - label: "I have masked all secrets and PII (no playit secret, tokens, keys, or home public IP)."
+          required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: What was different from the Galaxy S9 reference?
+      placeholder: "Adaptations you had to make, anything that tripped you up."
