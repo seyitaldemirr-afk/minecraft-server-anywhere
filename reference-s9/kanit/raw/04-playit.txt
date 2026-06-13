@@ -1,0 +1,24 @@
+===== FAZ 3 — PLAYIT (ham, secret'sız) =====
+Tarih: Sat Jun 13 09:40:52 TSS 2026
+TUR paketi: playit-cli (claim) + playitd (daemon). Bare playit-cli systemd arar → kullanılmaz.
+Claim akışı: playit-cli claim generate/url/exchange (son satır=64-hex secret)
+Daemon: playitd --secret-path ~/.config/playit/secret
+
+--- playitd bağlantı logu (secret/IP nötr satırlar) ---
+2026-06-13T06:38:37.312391Z  INFO playit_agent_core::agent_control::address_selector: trying to establish tunnel connection addr=[2602:fbaf:85c:1::1]:5525
+2026-06-13T06:38:37.313119Z ERROR playit_agent_core::agent_control::address_selector: failed to ping tunnel server
+2026-06-13T06:38:37.313214Z  INFO playit_agent_core::agent_control::address_selector: trying to establish tunnel connection addr=69.9.188.1:5525
+2026-06-13T06:38:37.338040Z  INFO playit_agent_core::agent_control::address_selector: got initial pong from tunnel server pong=Pong { request_now: 1781332717313, server_now: 1781332717335, server_id: 1, data_center_id: 39, client_addr: 159.146.xx.xx:17717, tunnel_addr: 69.9.188.1:5525, session_expire_at: None }
+2026-06-13T06:38:38.840176Z  INFO playit_agent_core::agent_control::established_control: authenticate control last_pong=Pong { request_now: 1781332717313, server_now: 1781332717335, server_id: 1, data_center_id: 39, client_addr: 159.146.xx.xx:17717, tunnel_addr: 69.9.188.1:5525, session_expire_at: None }
+2026-06-13T06:38:40.117782Z  INFO playit_agent_core::agent_control::established_control: authenticate control last_pong=Pong { request_now: 1781332718840, server_now: 1781332718862, server_id: 1, data_center_id: 39, client_addr: 159.146.xx.xx:17717, tunnel_addr: 69.9.188.1:5525, session_expire_at: Some(1781333017565) }
+
+--- DIŞ ERİŞİM KANITI (PC, playit relay) ---
+<your-tunnel>.gl.joinmc.link → Java 1.21.1, MOTD Aldemir Sunucusu, players 0/3, ping ~200ms
+
+--- ÇÖKME TESTİ ---
+kill -9 java → run.sh dirildi → dışarıdan mcstatus ~30s (10s bekleme+açılış) geri geldi
+
+--- REBOOT TESTİ (sıfır dokunuş) ---
+adb reboot 09:45:35 → boot_completed 09:46:05 (30s) → dışarıdan mcstatus 09:48:21
+Toplam ~114s: Termux:Boot→start-mc→wake-lock+mc+playit, playit AYNI adrese yeniden bağlandı
+<your-tunnel>.gl.joinmc.link → Java 1.21.1, 0/3 — GEÇTİ

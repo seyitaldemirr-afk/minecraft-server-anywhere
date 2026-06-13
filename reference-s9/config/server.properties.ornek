@@ -1,0 +1,16 @@
+# Aldemir Sunucusu — S8/S9 için server.properties (kur.sh bunu kopyalar)
+# Çekirdek yol: offline mod + whitelist + 3 oyuncu + zayıf donanıma göre mesafe.
+motd=Aldemir Sunucusu
+max-players=3
+white-list=true
+enforce-whitelist=true
+online-mode=false
+view-distance=6
+simulation-distance=5
+spawn-protection=0
+allow-flight=true
+sync-chunk-writes=false
+network-compression-threshold=256
+server-port=25565
+# server-ip boş = 127.0.0.1 dahil tüm arayüzler; playit 127.0.0.1:25565'e bağlanır.
+server-ip=

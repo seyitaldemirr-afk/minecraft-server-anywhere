@@ -1,0 +1,17 @@
+#!/data/data/com.termux/files/usr/bin/sh
+# Termux:Boot bunu telefon açılışında çalıştırır.
+# wake-lock + sunucu (mc) + tünel (playit) tmux oturumlarını ayağa kaldırır.
+termux-wake-lock
+
+# Sunucu (varsa yeniden açma)
+tmux has-session -t mc 2>/dev/null || tmux new-session -d -s mc "$HOME/mcserver/run.sh"
+
+# playit tüneli (secret kuruluysa) — playitd daemon'u, playit-cli DEĞİL.
+# (playit-cli argümansız systemd servisi arar; Termux'ta yok. Daemon'u elle koşuyoruz.)
+if command -v playitd >/dev/null 2>&1 && [ -f "$HOME/.config/playit/secret" ]; then
+  tmux has-session -t playit 2>/dev/null || \
+    tmux new-session -d -s playit "playitd --secret-path $HOME/.config/playit/secret"
+fi
+
+# SSH isteyenler için (opsiyonel — docs/opsiyonel/SSH.md):
+# command -v sshd >/dev/null 2>&1 && sshd

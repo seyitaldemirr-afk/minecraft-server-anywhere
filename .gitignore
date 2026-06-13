@@ -1,0 +1,30 @@
+# --- SIRLAR (asla commit etme) ---
+*secret*
+*.secret
+**/playit/**
+ortam.env
+*.pem
+*_ed25519
+*_ed25519.pub
+authorized_keys
+*.token
+
+# --- Çalışma zamanı / büyük dosyalar ---
+mcserver/
+world/
+world_nether/
+world_the_end/
+logs/
+*.log
+crash-reports/
+*.jar
+backups/
+
+# --- Kanıt loglarını YAYINLA (yukarıdaki *.log / logs/ kurallarından muaf) ---
+!kurulum-gunlugu/**
+!kurulum-gunlugu/raw/**
+
+# --- OS / editör ---
+.DS_Store
+Thumbs.db
+*.tmp

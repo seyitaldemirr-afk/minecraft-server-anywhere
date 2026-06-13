@@ -1,0 +1,44 @@
+===== FAZ 0 — TABAN RECON =====
+Tarih: Sat Jun 13 09:13:54 TSS 2026
+
+--- cihaz ---
+SM-G960F
+10
+arm64-v8a
+samsungexynos9810
+exynos9810
+
+--- bellek (/proc/meminfo) ---
+MemTotal:        3697596 kB
+MemFree:          293744 kB
+MemAvailable:    1569412 kB
+SwapTotal:       2097148 kB
+
+--- pil ---
+  AC powered: false
+  USB powered: true
+  status: 2
+  level: 12
+  temperature: 343
+
+--- CPU max freq (cpu0..7) ---
+1794000
+1794000
+1794000
+1794000
+2704000
+2704000
+2704000
+2704000
+
+--- Termux kurulu mu ---
+(termux YOK)
+
+--- Wi-Fi / LAN IP ---
+16: wlan0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    inet 192.168.1.105/24 brd 192.168.1.255 scope global wlan0
+       valid_lft forever preferred_lft forever
+
+--- pil/uyku ayarı ---
+null
+===== SON =====

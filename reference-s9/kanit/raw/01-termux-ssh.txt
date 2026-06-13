@@ -1,0 +1,16 @@
+===== FAZ 1 — TERMUX + SSH OMURGASI =====
+Tarih: Sat Jun 13 09:18:59 TSS 2026
+Termux app: v0.118.3 (GitHub debug, arm64-v8a) — adb install Success
+Termux:Boot: v0.8.1 (GitHub debug) — adb install Success; BootActivity bir kez açıldı
+Doze whitelist: com.termux + com.termux.boot eklendi (dumpsys deviceidle)
+
+--- ssh s9: kimlik + sistem ---
+whoami: u0_a251
+uname: Linux localhost 4.9.118-23733677 #1 SMP PREEMPT Thu Jul 21 10:29:10 KST 2022 aarch64 Android
+android: 10
+openssh: OpenSSH_10.3p1, OpenSSL 3.4.1 11 Feb 2025
+sshd port: 8022
+
+--- host key (ed25519) fingerprint ---
+SHA256:/K6JGwFu37RzJWSrnKITcwCDwrQgVD7t+RqUdjHONUw
+===== SON =====

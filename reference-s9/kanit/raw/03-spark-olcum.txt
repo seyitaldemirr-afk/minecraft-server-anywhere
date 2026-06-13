@@ -1,0 +1,6 @@
+===== FAZ 3 — SPARK ÖLÇÜM (boş sunucu, geçici spark+fabric-api) =====
+Tarih: Sat Jun 13 09:36:04 TSS 2026 | Not: ölçüm için spark+fabric-api GEÇİCİ eklendi, sonra çıkarıldı.
+TPS 5s/10s/1m/5m/15m: 20.0 / 20.0 / 20.0 / 20.0 / 20.0
+Tick min/med/95%/max (10s): 0.7 / 4.2 / 7.8 / 94.1 ms ; (1m): 0.7/6.1/11.5/94.1
+CPU: %0 (oyuncu yok) | Heap: 401.6 MB / 1.0 GB (%39)
+Kriter: medyan ≤40, 95%ile <50 ms → GEÇTİ

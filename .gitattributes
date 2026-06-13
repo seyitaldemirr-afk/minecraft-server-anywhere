@@ -1,0 +1,5 @@
+# Tüm metin dosyaları repoda ve checkout'ta LF (Windows'ta düzenlense bile).
+# Kritik: scriptler Termux'ta CRLF ile bozulmasın.
+* text=auto eol=lf
+*.sh text eol=lf
+scripts/boot/start-mc text eol=lf
